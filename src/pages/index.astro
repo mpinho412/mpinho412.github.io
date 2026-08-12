@@ -1,0 +1,359 @@
+---
+import '../styles/global.css';
+
+const email = "mpinho@vt.edu";
+const altEmail = "mpinho412@gmail.com";
+const phone = "412-563-4025";
+const linkedin = "https://www.linkedin.com/in/miguel-pinho1";
+const github = "https://github.com/mpinho412";
+
+const highlights = [
+  {
+    label: "Experience",
+    title: "3 Internships + 1 Externship",
+    text: "Supply chain, process improvement, and construction management"
+  },
+  {
+    label: "Education",
+    title: "B.S. Industrial & Systems Engineering",
+    text: "Virginia Tech - expected graduation May 2029"
+  },
+  {
+    label: "Academics",
+    title: "3.62 Cumulative GPA",
+    text: "Fall 2025 Dean's List with Distinction"
+  }
+];
+
+const experience = [
+  {
+    role: "Supply Chain & Process Improvement Intern",
+    org: "U.S. Electrofused Minerals, Inc. (Curimbaba Group) - Aliquippa, PA",
+    dates: "Jul 2026 - Aug 2026",
+    bullets: [
+      "Standardized processing, distribution, inventory, and procurement workflows at an abrasive minerals facility, delivering SOPs with built-in quality control checkpoints and failure scenario documentation adopted across four departments.",
+      "Mapped end-to-end data flows within the Sage 100 ERP system to identify process gaps and standardize reporting across departments.",
+      "Built a facility-wide inventory mapping system across two warehouses, cataloging 142 alphabetical subsections and 101 OS-numbered bins through physical audits to strengthen business continuity.",
+      "Built an Excel-based inventory tracking system and an Airtable hard goods replenishment tracker using Kanban and Kaizen principles, giving management live visibility into warehouse locations and item transactions."
+    ]
+  },
+  {
+    role: "Project Engineer Extern",
+    org: "Gilbane Inc. - Pittsburgh, PA",
+    dates: "Jul 2025 - Aug 2025",
+    bullets: [
+      "Conducted 20+ site walks over four weeks monitoring fire suppression installation, MEP rough-ins, and systems commissioning at the University of Pittsburgh Sports Performance Complex.",
+      "Logged and tracked 15+ RFIs and submittals in Procore under project engineer supervision, contributing to reduced document turnaround time.",
+      "Produced daily meeting minutes for contractor, safety, and staff meetings, aligning 25+ stakeholders on action items and deadlines.",
+      "Shadowed 5+ project engineers and foremen, building an applied understanding of trade coordination, field safety (PPE), and construction management workflows."
+    ]
+  },
+  {
+    role: "IISE Professional Development Intern",
+    org: "Virginia Tech IISE Student Chapter - Blacksburg, VA",
+    dates: "Feb 2026 - May 2026",
+    bullets: [
+      "Coordinated professional development events and industry panels for 100+ IISE student members, organizing speaker sessions and assisting with the Torgersen Leadership Summit.",
+      "Secured and managed a Volvo Trucks manufacturing plant tour in Dublin, VA - the largest manufacturing plant tour ever hosted at Virginia Tech - coordinating logistics, faculty approval, and 29 attendees."
+    ]
+  },
+  {
+    role: "E-Week Chair, Student Engineers' Council",
+    org: "Virginia Tech College of Engineering - Blacksburg, VA",
+    dates: "Sep 2025 - Present",
+    bullets: [
+      "Coordinate event logistics, vendor outreach, and budgeting for E-Week, an annual program engaging 500+ students across all engineering disciplines, working alongside 20+ student organizations and university staff.",
+      "Help coordinate a week-long career fair bringing together 200+ companies, from defense contractors to corporate, for over 12,900 engineering students, handling vendor logistics and on-site operations."
+    ]
+  },
+  {
+    role: "ISE Ambassador",
+    org: "Virginia Tech ISE Department - Blacksburg, VA",
+    dates: "Apr 2026 - Present",
+    bullets: [
+      "Selected to represent the ISE department through student engagement events and initiatives across the College of Engineering."
+    ]
+  },
+  {
+    role: "Innovation Track Member",
+    org: "Hybrid Electric Vehicle Team (HEVT), Virginia Tech - Blacksburg, VA",
+    dates: "Jun 2026 - Present",
+    bullets: [
+      "Contribute to the Innovation Track Sub-Team on Virginia Tech's HEVT, working on vehicle systems design and engineering solutions."
+    ]
+  }
+];
+
+const leadership = [
+  {
+    role: "Peer Jury Foreman",
+    org: "Quaker Valley High School - Juvenile Court's Community-Based Program",
+    dates: "Sep 2023 - Jun 2025",
+    bullets: [
+      "Mediated 30+ court-eligible disciplinary cases as part of one of Pennsylvania's first peer jury programs, helping students avoid formal legal proceedings; sworn in by a local judge after training and an oath of confidentiality."
+    ]
+  },
+  {
+    role: "Founder, Latino Club",
+    org: "Quaker Valley High School",
+    dates: "Sep 2024 - Jun 2025",
+    bullets: [
+      "Founded the school's first Latino student organization, building programming around cultural advocacy and community identity."
+    ]
+  }
+];
+
+const skillGroups = [
+  {
+    title: "Technical & Engineering",
+    items: ["Process analysis", "DMAIC methodology", "Control charts", "Process capability", "SolidWorks", "CAD", "MATLAB", "Python", "3D printing", "Arduino", "Raspberry Pi"]
+  },
+  {
+    title: "Operations & Data",
+    items: ["Sage 100 ERP", "SOP development", "Inventory mapping", "Kanban", "Kaizen", "Excel-based tracking tools", "Airtable", "Microsoft Office 365", "Power BI", "SQL", "Google Workspace", "Slack", "Notion"]
+  },
+  {
+    title: "Infrastructure & Field",
+    items: ["MEP systems monitoring", "RFI and submittal tracking (Procore)", "Site safety (PPE)", "Construction management workflows"]
+  },
+  {
+    title: "Languages",
+    items: ["Portuguese (Native)", "English (Native)", "Spanish (Working Proficiency)"]
+  }
+];
+
+const awards = [
+  { name: "Six Sigma Green Belt Certification", sub: "Institute of Industrial and Systems Engineers (IISE)", date: "April 2026" },
+  { name: "Fall 2025 Dean's List with Distinction", sub: "Virginia Tech", date: "Feb 2026" },
+  { name: "Graduating Senior Award", sub: "Quaker Valley High School", date: "May 2025" },
+  { name: "SMART Certification", sub: "Carnegie Mellon Robotics Institute / ARM Institute", date: "Jun 2023" }
+];
+const LI = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>';
+const GH = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1-.11-.78-.42-1.31-.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.92 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>';
+const MAIL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>';
+const PHONE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3h-2A1.6 1.6 0 0 0 3 4.6C3 12.5 11.5 21 19.4 21a1.6 1.6 0 0 0 1.6-1.6v-2a1.6 1.6 0 0 0-1.3-1.57l-2.8-.56a1.6 1.6 0 0 0-1.6.6l-.9 1.2a13 13 0 0 1-5-5l1.2-.9a1.6 1.6 0 0 0 .6-1.6l-.56-2.8A1.6 1.6 0 0 0 6.6 3z"/></svg>';
+const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.25 7-11a7 7 0 1 0-14 0c0 5.75 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Miguel Pinho | Industrial &amp; Systems Engineering Student</title>
+    <meta
+      name="description"
+      content="Portfolio of Miguel Pinho, an Industrial and Systems Engineering student at Virginia Tech focused on process improvement, supply chain, and operations."
+    />
+    <link rel="canonical" href="https://mpinho412.github.io/" />
+  </head>
+
+  <body id="top">
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top">Miguel Pinho</a>
+        <nav aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero-inner">
+          <div class="portrait">
+            <img src="/profile.jpg" alt="Portrait of Miguel Pinho" width="660" height="880" />
+          </div>
+          <div>
+            <p class="hello">Hello, I'm</p>
+            <h1>Miguel Pinho</h1>
+            <p class="role">Industrial &amp; Systems Engineering Student at Virginia Tech</p>
+            <p class="meta">Blacksburg, VA &middot; Sewickley, PA &middot; Expected graduation May 2029</p>
+            <div class="btns">
+              <a class="btn btn-ghost" href="#experience">View My Experience</a>
+              <a class="btn btn-solid" href={"mailto:" + email}>Contact Me</a>
+            </div>
+            <ul class="socials">
+              <li>
+                <a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" set:html={LI} />
+              </li>
+              <li>
+                <a href={github} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" set:html={GH} />
+              </li>
+              <li>
+                <a href={"mailto:" + email} aria-label="Email Miguel" set:html={MAIL} />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="wrap">
+          <p class="kicker">Get to know more</p>
+          <h2 class="h2">About Me</h2>
+          <div class="stats">
+            {highlights.map((h) => (
+              <div class="stat">
+                <div class="label">{h.label}</div>
+                <h3>{h.title}</h3>
+                <p>{h.text}</p>
+              </div>
+            ))}
+          </div>
+          <p class="about-text">
+            Hello! I am Miguel, an Industrial and Systems Engineering student at Virginia Tech,
+            originally from Sewickley, Pennsylvania. I am drawn to the places where process, data,
+            and people meet - writing SOPs on a plant floor, mapping ERP data flows, or coordinating
+            an engineering week for hundreds of students. I have interned in supply chain and process
+            improvement at an abrasive minerals manufacturer and externed as a project engineer on a
+            large-scale construction project. I am a Six Sigma Green Belt, I speak Portuguese,
+            English, and Spanish, and I am always looking for the next opportunity to make a system
+            run better.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="wrap">
+          <p class="kicker">Where I study</p>
+          <h2 class="h2">Education</h2>
+          <div class="timeline">
+            <article class="job">
+              <div class="job-head">
+                <h3>Virginia Tech - B.S. in Industrial and Systems Engineering</h3>
+                <span class="dates">Expected May 2029</span>
+              </div>
+              <p class="org">Blacksburg, VA</p>
+              <ul>
+                <li>Cumulative GPA: 3.62</li>
+                <li>Fall 2025 Dean's List with Distinction</li>
+                <li>Six Sigma Green Belt certified through IISE</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="wrap">
+          <p class="kicker">Explore my</p>
+          <h2 class="h2">Experience</h2>
+          <div class="timeline">
+            {experience.map((job) => (
+              <article class="job">
+                <div class="job-head">
+                  <h3>{job.role}</h3>
+                  <span class="dates">{job.dates}</span>
+                </div>
+                <p class="org">{job.org}</p>
+                <ul>
+                  {job.bullets.map((b) => <li>{b}</li>)}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="leadership">
+        <div class="wrap">
+          <p class="kicker">Beyond the classroom</p>
+          <h2 class="h2">Leadership &amp; Community Impact</h2>
+          <div class="timeline">
+            {leadership.map((job) => (
+              <article class="job">
+                <div class="job-head">
+                  <h3>{job.role}</h3>
+                  <span class="dates">{job.dates}</span>
+                </div>
+                <p class="org">{job.org}</p>
+                <ul>
+                  {job.bullets.map((b) => <li>{b}</li>)}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="wrap">
+          <p class="kicker">What I bring</p>
+          <h2 class="h2">Core Skills</h2>
+          <div class="skill-grid">
+            {skillGroups.map((group) => (
+              <div class="skill-card">
+                <h3>{group.title}</h3>
+                <ul class="chips">
+                  {group.items.map((item) => <li>{item}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="awards">
+        <div class="wrap">
+          <p class="kicker">Certifications and honors</p>
+          <h2 class="h2">Awards</h2>
+          <ul class="awards">
+            {awards.map((a) => (
+              <li>
+                <span>
+                  <span class="a-name">{a.name}</span>
+                  <span class="a-sub">{a.sub}</span>
+                </span>
+                <span class="a-date">{a.date}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap">
+          <p class="kicker">Get in touch</p>
+          <h2 class="h2">Contact Me</h2>
+          <div class="contact">
+            <a class="contact-row" href={"mailto:" + email}>
+              <Fragment set:html={MAIL} />
+              <span>{email}</span>
+            </a>
+            <a class="contact-row" href={"mailto:" + altEmail}>
+              <Fragment set:html={MAIL} />
+              <span>{altEmail}</span>
+            </a>
+            <a class="contact-row" href={"tel:" + phone}>
+              <Fragment set:html={PHONE} />
+              <span>{phone}</span>
+            </a>
+            <a class="contact-row" href={linkedin} target="_blank" rel="noopener noreferrer">
+              <Fragment set:html={LI} />
+              <span>linkedin.com/in/miguel-pinho1</span>
+            </a>
+            <div class="contact-row">
+              <Fragment set:html={PIN} />
+              <span>Sewickley, PA</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>Miguel Pinho &middot; Built with Astro and hosted on GitHub Pages</p>
+      </div>
+    </footer>
+  </body>
+</html>
