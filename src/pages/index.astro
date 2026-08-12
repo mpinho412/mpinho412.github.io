@@ -6,11 +6,14 @@ const altEmail = "mpinho412@gmail.com";
 const phone = "412-563-4025";
 const linkedin = "https://www.linkedin.com/in/miguel-pinho1";
 const github = "https://github.com/mpinho412";
+const secProfile = "https://www.sec.vt.edu/about/leadership/MiguelPinho.html";
+const sixSigmaCert = "https://certificates.iise.org/130d9f9b-d249-4602-a371-2b1e0fb0a709";
+const qvSeniorAward = "https://www.qvsd.org/apps/news/article/2070929";
 
 const highlights = [
   {
     label: "Experience",
-    title: "3 Internships + 1 Externship",
+    title: "1 Internship + 1 Externship",
     text: "Supply chain, process improvement, and construction management"
   },
   {
@@ -84,6 +87,28 @@ const experience = [
   }
 ];
 
+const projects = [
+  {
+    title: "Vertical-axis Aesthetic Wind Turbine",
+    org: "Virginia Tech - Team 9 (Miguel Pinho, Dia Sashittal, Nikhil Pimpalapure, Aiden Lowery, Heidi Hort-Ly, Aiden Okabayashi)",
+    role: "My role: Prototyping & CAD",
+    tags: ["SolidWorks", "CFD Simulation", "Additive Manufacturing", "Python", "Renewable Energy"],
+    summary: [
+      "An aesthetically pleasing vertical-axis wind turbine designed to sit on top of a Virginia Tech dorm and solve the problem of backup power - generating and storing long-term energy so critical systems like AC, heat, and lighting stay running during an outage.",
+      "The team moved forward with my hybrid Savonius-Darrieus model because it captures wind from any direction, so it keeps generating without needing to be pointed into the wind. It also scored highest in nearly every criterion of our decision matrix, largely because the Savonius central rotor paired with Darrieus blades produces high torque at low wind speeds - exactly what a variable-wind urban campus needs.",
+      "On the prototyping and CAD side I focused on integrating the two turbine types structurally and functionally: refining the Darrieus components for low drag and high strength, engineering a clean mating surface between the vertical blades and the center hub so it survives centrifugal loading at speed, and using additive manufacturing to keep the Savonius rotor perfectly centered and balanced on the drive shaft. That meant learning advanced SolidWorks mates, lofted boss/base and fillet work, plus Design for Additive Manufacturing tolerancing and shelling so 3D-printed parts fit on the first assembly.",
+      "Stability is the tradeoff we accepted for efficiency and effectiveness, and it is the next thing we plan to solve."
+    ],
+    slides: [
+      { src: "/vawt-1-title.png", alt: "Vertical-axis Aesthetic Wind Turbine title slide" },
+      { src: "/vawt-2-goals.png", alt: "Project goals: constraints and criteria with rotor blade diagram" },
+      { src: "/vawt-3-prototype.png", alt: "Prototype details and iterative development photos" },
+      { src: "/vawt-4-cfd.png", alt: "CFD simulation analysis of airflow and torque results" },
+      { src: "/vawt-5-program.png", alt: "Program summary with power coefficient vs tip speed ratio curve" }
+    ]
+  }
+];
+
 const leadership = [
   {
     role: "Peer Jury Foreman",
@@ -123,16 +148,19 @@ const skillGroups = [
 ];
 
 const awards = [
-  { name: "Six Sigma Green Belt Certification", sub: "Institute of Industrial and Systems Engineers (IISE)", date: "April 2026" },
+  { name: "Six Sigma Green Belt Certification", sub: "Institute of Industrial and Systems Engineers (IISE)", date: "April 2026", link: sixSigmaCert },
   { name: "Fall 2025 Dean's List with Distinction", sub: "Virginia Tech", date: "Feb 2026" },
-  { name: "Graduating Senior Award", sub: "Quaker Valley High School", date: "May 2025" },
+  { name: "Graduating Senior Award", sub: "Quaker Valley High School", date: "May 2025", note: "An honor bestowed annually upon only one student who best exemplifies the district's mission and values.", link: qvSeniorAward },
   { name: "SMART Certification", sub: "Carnegie Mellon Robotics Institute / ARM Institute", date: "Jun 2023" }
 ];
+
 const LI = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>';
 const GH = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1-.11-.78-.42-1.31-.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.92 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>';
 const MAIL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>';
 const PHONE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 3h-2A1.6 1.6 0 0 0 3 4.6C3 12.5 11.5 21 19.4 21a1.6 1.6 0 0 0 1.6-1.6v-2a1.6 1.6 0 0 0-1.3-1.57l-2.8-.56a1.6 1.6 0 0 0-1.6.6l-.9 1.2a13 13 0 0 1-5-5l1.2-.9a1.6 1.6 0 0 0 .6-1.6l-.56-2.8A1.6 1.6 0 0 0 6.6 3z"/></svg>';
 const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.25 7-11a7 7 0 1 0-14 0c0 5.75 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>';
+const CHEV_L = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>';
+const CHEV_R = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>';
 ---
 
 <!doctype html>
@@ -157,6 +185,7 @@ const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#leadership">Leadership</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#awards">Awards</a></li>
@@ -261,6 +290,59 @@ const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
               </article>
             ))}
           </div>
+
+          <a
+            class="sec-badge"
+            href={secProfile}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Miguel Pinho on the Virginia Tech Student Engineers' Council website"
+          >
+            <span class="sec-mark">VT</span>
+            <span class="sec-copy">
+              <strong>Student Engineers' Council</strong>
+              <small>Virginia Tech College of Engineering</small>
+            </span>
+            <span class="sec-arrow">View my leadership profile &rarr;</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="wrap">
+          <p class="kicker">What I have built</p>
+          <h2 class="h2">Projects</h2>
+          <div class="projects">
+            {projects.map((p) => (
+              <article class="project">
+                <div class="project-head">
+                  <h3>{p.title}</h3>
+                  <p class="org">{p.org}</p>
+                  <span class="project-role">{p.role}</span>
+                </div>
+                <div class="project-body">
+                  {p.summary.map((s) => <p>{s}</p>)}
+                </div>
+                <ul class="chips tags">
+                  {p.tags.map((t) => <li>{t}</li>)}
+                </ul>
+                <div class="slideshow" data-slideshow>
+                  <div class="slide-track">
+                    {p.slides.map((s, i) => (
+                      <img class={i === 0 ? "slide is-active" : "slide"} src={s.src} alt={s.alt} loading="lazy" />
+                    ))}
+                  </div>
+                  <button class="slide-nav prev" type="button" aria-label="Previous slide" set:html={CHEV_L} />
+                  <button class="slide-nav next" type="button" aria-label="Next slide" set:html={CHEV_R} />
+                  <div class="slide-dots">
+                    {p.slides.map((s, i) => (
+                      <button class={i === 0 ? "dot is-active" : "dot"} type="button" aria-label={"Go to slide " + (i + 1)}></button>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -306,12 +388,23 @@ const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
         <div class="wrap">
           <p class="kicker">Certifications and honors</p>
           <h2 class="h2">Awards</h2>
+
+          <div class="cred">
+            <button class="badge-btn" type="button" data-cert-open aria-label="Preview my Six Sigma Green Belt certificate">
+              <img src="/six-sigma-green-belt.png" alt="Six Sigma Green Belt - IISE Certified badge" width="340" height="340" />
+            </button>
+            <p class="badge-cap">Click the badge to preview the certificate</p>
+          </div>
+
           <ul class="awards">
             {awards.map((a) => (
               <li>
                 <span>
-                  <span class="a-name">{a.name}</span>
+                  <span class="a-name">
+                    {a.link ? <a href={a.link} target="_blank" rel="noopener noreferrer">{a.name}</a> : a.name}
+                  </span>
                   <span class="a-sub">{a.sub}</span>
+                  {a.note && <span class="a-note">{a.note}</span>}
                 </span>
                 <span class="a-date">{a.date}</span>
               </li>
@@ -350,10 +443,60 @@ const PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
       </section>
     </main>
 
+    <div class="cert-modal" id="certModal" hidden>
+      <div class="cert-backdrop" data-close></div>
+      <div class="cert-dialog" role="dialog" aria-modal="true" aria-label="Six Sigma Green Belt certificate preview">
+        <button class="cert-close" type="button" data-close aria-label="Close preview">&times;</button>
+        <div class="cert-paper">
+          <p class="cert-issuer">Institute of Industrial and Systems Engineers</p>
+          <h3 class="cert-title">Six Sigma Green Belt</h3>
+          <p class="cert-sub">Certificate</p>
+          <p class="cert-line">is hereby granted to</p>
+          <p class="cert-name">Miguel Pinho</p>
+          <p class="cert-line">In recognition of the mastery of the<br />Six Sigma Green Belt body of knowledge</p>
+          <div class="cert-meta">
+            <div><span>April 13, 2026</span><small>Issue Date &middot; Expires 04/12/2029</small></div>
+            <img src="/six-sigma-green-belt.png" alt="Six Sigma Green Belt badge" />
+            <div><span>James Swisher</span><small>Continuing Education Director</small></div>
+          </div>
+          <p class="cert-id">Certificate ID: 179698732</p>
+        </div>
+        <a class="btn btn-solid" href={sixSigmaCert} target="_blank" rel="noopener noreferrer">View verified credential</a>
+      </div>
+    </div>
+
     <footer>
       <div class="wrap">
         <p>Miguel Pinho &middot; Built with Astro and hosted on GitHub Pages</p>
       </div>
     </footer>
+
+    <script is:inline>
+      document.querySelectorAll("[data-slideshow]").forEach(function (box) {
+        var slides = box.querySelectorAll(".slide");
+        var dots = box.querySelectorAll(".dot");
+        var i = 0;
+        function show(n) {
+          i = (n + slides.length) % slides.length;
+          slides.forEach(function (s, k) { s.classList.toggle("is-active", k === i); });
+          dots.forEach(function (d, k) { d.classList.toggle("is-active", k === i); });
+        }
+        var prev = box.querySelector(".prev");
+        var next = box.querySelector(".next");
+        if (prev) prev.addEventListener("click", function () { show(i - 1); });
+        if (next) next.addEventListener("click", function () { show(i + 1); });
+        dots.forEach(function (d, k) { d.addEventListener("click", function () { show(k); }); });
+      });
+
+      (function () {
+        var modal = document.getElementById("certModal");
+        if (!modal) return;
+        function open() { modal.hidden = false; document.body.style.overflow = "hidden"; }
+        function close() { modal.hidden = true; document.body.style.overflow = ""; }
+        document.querySelectorAll("[data-cert-open]").forEach(function (b) { b.addEventListener("click", open); });
+        modal.querySelectorAll("[data-close]").forEach(function (b) { b.addEventListener("click", close); });
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+      })();
+    </script>
   </body>
 </html>
